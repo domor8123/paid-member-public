@@ -1,5 +1,2 @@
 psycopg2 == 2.8.6
 bottle== 0.12.19
-google-api-python-client == 1.12.8
-google-auth-httplib2 == 0.0.4
-google-auth-oauthlib == 0.4.2

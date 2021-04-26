@@ -1,7 +1,10 @@
 {
     "webserver":"0.0.0.0:5000",
-    "databaseAddress":"root@localhost",
+    "databaseAddress":"127.0.0.1:3306",
     "databasePassword":"password",
     "database":"database", 
-    "email":"domor8123@gmail.com"
+    "email":"domor8123@gmail.com",
+    "EmailPassword":"password",
+    "EmlaUserId":"emlauser",
+    "EmlaLink":"https://www.emlalock.com/"
 }

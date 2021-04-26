@@ -13,23 +13,26 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-md navbar-custom fixed-top">
-            <li class="navbar-brand"><a href="https://domor8123.github.io/little_sissy_domor"><img src="/static/navbarlogo.png" alt="Little Sissy Domor Logo"></a></li>
+            <li class="navbar-brand"><a href="/"><img src="/static/navbarlogo.png" alt="Little Sissy Domor Logo"></a></li>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsenavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://domor8123.github.io/little_sissy_domor/index.html#about">About Me</a>
+                        <a class="nav-link" href={{link}}> {{username}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about-me">About Me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.pornhub.com/model/little_sissy_domor">Ponrhub Porfile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://domor8123.github.io/little_sissy_domor/Update.html">Additional plans/update-log</a>
+                        <a class="nav-link" href="/Updates">Additional plans/update-log</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://domor8123.github.io/little_sissy_domor/Contact.html">Contact/Tip Information</a>
+                        <a class="nav-link" href="/contact-me">Contact/Tip Information</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/amazonWishlist">Amazon Wish List</a>
@@ -56,10 +59,10 @@
                 </div>
             </div>
         </div>
-        <form method="POST" action="./member-signup-Success">
+        <form method="POST" action="./member-login-Success">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 align="center"><strong>Sign Up</strong></h1>
+                    <h1 align="center"><strong>Login</strong></h1>
                 </div>
             </div>
             <div class="row">
@@ -67,16 +70,13 @@
                     <div align="center">
                         <input type="text" name="Username" id="Username" class="form-control" placeholder="username" required><br>
                         <input type="password" name="Password" id="Password" class="form-control" placeholder="password" required><br>
-                        <input type="password" name="checkPassword" id="checkPassword" class="form-control" placeholder=" confirm password" required><br>
-                        <input type="email" name="Email" id="Email" class="form-control" placeholder="email" required><br>
-                        <input type="email" name="checkEmail" id="checkEmail" class="form-control" placeholder="confirm email" required><br>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div align="center">
-                        <button id="Signup" class="button" type="submit" value="signup">Sign up</button>
+                        <button id="login" class="button" type="submit" value="login">Login</button>
                     </div>
                 </div>
             </div>
@@ -92,10 +92,11 @@
             <div class="col-md-4">
                 <div align="center">
                     <h4><strong>Navigation</strong></h4>
-                    <p><a href="https://domor8123.github.io/little_sissy_domor/index.html#about">About Me</a></p>
+                    <p><a class="nav-link" href={{link}}> {{username}}</a></p>
+                    <p><a href="/about-me">About Me</a></p>
                     <p><a href="https://www.pornhub.com/model/little_sissy_domor">Pornhub Profile</a></p>
-                    <p><a href="https://domor8123.github.io/little_sissy_domor/Update.html">Additional Plans/Change-log</a></p>
-                    <p><a href="https://domor8123.github.io/little_sissy_domor/Contact.html">Contact/Tip Information</a></p>
+                    <p><a href="/Updates">Additional Plans/Change-log</a></p>
+                    <p><a href="/contact-me">Contact/Tip Information</a></p>
                     <p><a href="/amazonwishlist">Amazon Wishlist</a></p>
                     <p><a href="/cahst">Lock Me</a></p>
                     <p><a href="/member-signup">Sign up</a></p>

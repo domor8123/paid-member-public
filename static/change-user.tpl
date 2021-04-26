@@ -20,6 +20,9 @@
             <div class="collapse navbar-collapse" id="collapsenavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        <a class="nav-link" href= {{link}}>{{username}}</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/about-me">About Me</a>
                     </li>
                     <li class="nav-item">
@@ -58,37 +61,38 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <form method="POST" action="./chastupdate">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 align="center"><strong>Time Locked Up</strong></h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div align="center">
-                                <select id="time" name="time" required>
-                                <option value="1hour">1 hour</option>
-                                <option value="2hour">2 hour</option>
-                                <option value="3hour">3 hour</option>
-                                <option value="4hour">4 hour</option>
-                            </select><br>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <button id="timesubmit" class="button" type="submit" value="timesubmit">Submit</button>
-                        </div>
-                    </div>
-                </form> 
+                <div align="center">
+                    <h1> Hello {{username}}</h1>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p align="center"><strong>NOTE: You can only Update the time every 24 hours</strong></p>
+        <form method="POST" action="/profile-updated">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 align="center"><strong>Account Settings</strong></h1>
+                </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div align="center">
+                        <input type="text" name="previousUsername" id="previousUsername" class="form-control" placeholder="Previous/Current username" required><br>
+                        <input type="text" name="changeUsername" id="changeUsername" class="form-control" placeholder="new username"><br>
+                        <input type="password" name="changePassword" id="changePassword" class="form-control" placeholder="new password"><br>
+                        <input type="password" name="changecheckPassword" id="changecheckPassword" class="form-control" placeholder=" confirm new password"><br>
+                        <input type="email" name="changeEmail" id="changeEmail" class="form-control" placeholder="new email"><br>
+                        <input type="email" name="changecheckEmail" id="changecheckEmail" class="form-control" placeholder="confirm new email"><br>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div align="center">
+                        <button id="Save" class="button" type="submit" value="Save">Save</button>
+                        <p> Might not be able to handle multiple changes, so I recommend to change one thing at a time </p>
+                    </div>
+                </div>
+            </div>
+        </form> 
     </body>
     <footer>
         <div class="row">

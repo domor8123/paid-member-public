@@ -10,13 +10,13 @@
 }
 .gap {
     background-color: #ffd1dc;
-    padding: 24px 24px 24px 50px;
+    padding: 30px 30px 30px 50px;
 }
 body{
     background-color: #ffd1dc;
 }
 h1,h2,h4,p{
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 a{
     color: black;
