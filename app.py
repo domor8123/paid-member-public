@@ -108,8 +108,6 @@ def chast():
 
 @route('/amazonWishlist')
 def amazonWishlist():
-    if request.get_cookie("isUser" + re.sub('[^A-Za-z0-9]+','',str(backend.encryptedtext(getUsername())))) is "1":
-        return '''<meta http-equiv="refresh" content="0; URL='https://www.amazon.com/hz/wishlist/dl/invite/4PsoXGI?ref_=wl_share'" />'''
     return '''<meta http-equiv="refresh" content="0; URL='https://www.amazon.com/hz/wishlist/ls/1A8RYFH8ZMSUC?ref_=wl_share'" />'''
 
 @route('/Products')
@@ -119,8 +117,6 @@ def Product():
 @route('/profile/<username>')
 def profile(username):
     if request.get_cookie("isUser" + re.sub('[^A-Za-z0-9]+','',str(backend.encryptedtext(getUsername())))) is "1":
-        if getUsername() == "domor8123":
-            return '''<meta http-equiv="refresh" content="0; URL='https://data.heroku.com/dataclips/kvusqcufoggubettepdrsmohkhks'" />'''
         return template('static/change-user.tpl', usernamemethod())
     return '''<meta http-equiv="refresh" content="0; URL='./'" />'''
 
@@ -151,9 +147,6 @@ def profileupdate():
 @route('/delete/<username>')
 def deleteUsername(username):
     if request.get_cookie("isUser" + re.sub('[^A-Za-z0-9]+','',str(backend.encryptedtext(getUsername())))) is "1":
-        if getUsername() == "domor8123":
-            backend.deleteAccount(username)
-            return '''<meta http-equiv="refresh" content="0; URL='https://data.heroku.com/dataclips/kvusqcufoggubettepdrsmohkhks'" />'''
         return '''<meta http-equiv="refresh" content="0; URL='./'" />'''
     return '''<meta http-equiv="refresh" content="0; URL='./'" />'''
 
